@@ -1,21 +1,18 @@
 .page {
-  min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
+  min-width: 1083px;
   max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
   margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
 .header {
   position: relative;
+  display: flex;
+  justify-items: center;
+  align-items: center;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
-  display: flex;
   background-color: #f2f2f2;
 }
 
@@ -27,12 +24,9 @@
   left: 64px;
   z-index: 1;
 }
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
 
 .header__title {
-  display: flex;
-  justify-content: left;
-  align-items: center;
+  margin: 0;
   margin-left: 64px;
   width: 730px;
   line-height: 96px;
@@ -60,22 +54,23 @@
   position: absolute;
   right: 0px;
   top: 64px;
-  background-color: #2f80ed;
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
 }
 
 .header__main-illustration {
   position: absolute;
-  display: flex;
-  right: -50px;
+  background-image: url(../images/header-image.png);
+  background-size: cover;
+  right: 0px;
   bottom: 0px;
   width: 765px;
   height: 608px;
 }
 
 .content {
-  position: relative;
+  
 }
 
 .description {
@@ -130,9 +125,9 @@
 
 .digits {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
+  position: relative;
   padding-top: 100px;
   margin-bottom: 100px;
 }
@@ -158,10 +153,12 @@
 
 .table {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  width: 1100px;
-  padding: 0px;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 1083px;
+  padding: 0;
+  margin: 0;
   margin-left: auto;
   margin-right: auto;
   z-index: 1;
@@ -170,6 +167,9 @@
 .table__cell {
   width: 250px;
   margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  list-style: none;
 }
 
 .table__heading {
@@ -233,6 +233,7 @@
   position: absolute;
   bottom: 50%;
   right: 48px;
+  margin: 0;
   line-height: 51px;
   font-size: 36px;
   font-style: normal;
@@ -290,6 +291,7 @@
 
 .footer {
   background-color: black;
+  position: relative;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -360,11 +362,11 @@
 }
 
 .footer__column_link {
-  color: white;
   margin: 0px;
   line-height: 30px;
   font-size: 18px;
   font-style: normal;
+  color: white;
 }
 
 .footer__social_icon {
@@ -373,13 +375,6 @@
   margin-right: 10px;
 }
 
-
-
-/* и элемента с модификатором вида ключ-значение
-.table__cell_theme_dark {
-  width: 200px;
+.footer__column_link_color {
   color: white;
-  margin-right: 0;
-  margin-top: 80px;
 }
-*/
