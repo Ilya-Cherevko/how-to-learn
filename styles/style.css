@@ -203,6 +203,8 @@
 
 .feynman__main_illustration {
   position: absolute;
+  background-image: url(../images/feynman.png);
+  background-size: cover;
   left: 0px;
   bottom: 0px;
   width: 867px;
@@ -321,7 +323,7 @@
 }
 
 .logo_plase_footer {
-  height: 35px;background-image: url(../images/logo_place_footer.svg);
+  background-image: url(../images/logo_place_footer.svg);
   background-size: auto;
   height: 32px;
   width: 183px;
