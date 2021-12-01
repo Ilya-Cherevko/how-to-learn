@@ -104,6 +104,15 @@
   }
 
 .two-columns__paragraph {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.two-columns__main-text {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -113,16 +122,7 @@
   right: 0px;
 }
 
-.two-columns__main-text {
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 30px;
-}
-
-.two-columns__span_accent {
+.two-columns__span-accent {
   font-weight: bold;
 }
 
@@ -267,17 +267,12 @@
   z-index: 0;
 }
 
-.section-title__theme_dark {
+.section-title_theme_dark {
   color: white;
 }
 
-.section-subtitle__theme_dark {
+.section-subtitle_theme_dark {
   color: white;
-}
-
-.table__cell_widht {
-  width: 0;
-  width: 200px;
 }
 
 .table__heading_theme_dark {
@@ -290,50 +285,52 @@
 
 .table__cell_theme_dark {
   color: white;
+  width: 0;
   width: 200px;
   margin-top: 80px;
 }
 
 .footer {
   background-color: #1f1f1f;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-around;
-  align-content: space-around;
+  flex-basis: 711px;
+  padding-top: 60px;
+  padding-bottom: 40px;
   min-height: 350px;
 }
 
-.footer__column {
+.footer__columns {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
-  margin-top: 60px;
-  margin-bottom: 40px;
   width: 90%;
   margin-left: 64px;
 }
 
-.footer__column_content_copyright {
+.footer__column {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-start;
+  margin: 0px;  
+}
+
+.footer__column_content_copyright {
   flex-basis: 711px;
 }
 
-.footer__logo_plase_footer {
-  height: 35px;
+.logo_plase_footer {
+  height: 35px;background-image: url(../images/logo_place_footer.svg);
+  background-size: auto;
+  height: 32px;
   width: 183px;
-  margin-top: 0px;
+  top: 0px;
   left: 64px;
-  color: white;
   z-index: 1;
 }
 
-.footer__autor {
+.footer__author {
   margin-top: 18px;
   margin-bottom: 18px;
   color: white;
@@ -351,30 +348,41 @@
 }
 
 
-.footer__column_heading {
+.footer__column-heading {
   color: white;
   margin: 0px;
   line-height: 30px;
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 20px;
 }
 
-.footer__column_links {
+.footer__column-links {
   margin-top: 20px;
   margin-bottom: 18px;
+  padding: 0;
 }
 
-.footer__column_link {
+.footer__column-link {
   margin: 0px;
   line-height: 30px;
   font-size: 18px;
   font-style: normal;
+  list-style: none;
+  padding: 0px;
   color: white;
 }
 
-.footer__social_icon {
+.footer__social-icon {
   width: 16px;
   height: 16px;
   margin-right: 10px;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+.two-columns__paragraph:last-of-type {
+  margin-bottom: 0px;
 }
