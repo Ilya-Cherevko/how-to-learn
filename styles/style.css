@@ -18,16 +18,16 @@
 
 .logo {
   background-size: auto;
-  height: 32px;
   width: 183px;
-  margin-left: 64px;
   z-index: 1;
 }
 
 .logo_place_header {
   position: absolute;
   background-image: url(../images/logo_place_header.svg);
+  height: 32px;
   top: 30px;
+  left: 64px;
 }
 
 .header__title {
@@ -337,6 +337,7 @@
 .logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
   height: 35px;
+  margin-left: 64px;
 }
 
 .footer__author {
