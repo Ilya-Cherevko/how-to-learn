@@ -23,7 +23,7 @@
   z-index: 1;
 }
 
-.logo_plase_header {
+.logo_place_header {
   position: absolute;
   background-image: url(../images/logo_place_header.svg);
   height: 32px;
@@ -269,6 +269,7 @@
 
 .kaufman__triangle {
   background-image: url(../images/kaufman-triangle.svg);
+  background-size: 877px 877px;
   position: absolute;
   height: 877px;
   width: 877px;
@@ -307,6 +308,7 @@
   padding-top: 60px;
   padding-bottom: 40px;
   min-height: 350px;
+  box-sizing: border-box;
 }
 
 .footer__columns {
@@ -332,7 +334,7 @@
   justify-content: space-between;
 }
 
-.logo_plase_footer {
+.logo_place_footer {
   background-image: url(../images/logo_place_footer.svg);
   height: 35px;
 }
