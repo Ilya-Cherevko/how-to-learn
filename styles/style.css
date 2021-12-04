@@ -371,6 +371,7 @@
   margin-top: 20px;
   margin-bottom: 18px;
   padding: 0;
+  list-style: none;
 }
 
 .footer__column-link {
@@ -378,7 +379,6 @@
   line-height: 30px;
   font-size: 18px;
   font-style: normal;
-  list-style: none;
   text-decoration: none;
   padding: 0px;
   color: white;
