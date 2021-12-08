@@ -1,34 +1,12 @@
-.header__square-pic:hover {
-  transform: rotate(360deg);
-  transition: transform 20s ease-out;
-  animation-iteration-count: infinite;
+@keyframes rotation {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
 }
 
-.header__main-illustration:hover .header__square-pic {
-  transform: rotate(360deg);
-  transition: transform 20s ease-out;
-  animation-iteration-count: infinite;
+.header__square-pic:hover{
+animation: rotation 20s linear 0s infinite;
 }
 
-.kaufman__triangle:hover {
-  transform: rotate(360deg);
-  transition: transform 20s ease-out;
-  animation-iteration-count: infinite;
+.kaufman__triangle:hover{
+animation: rotation 20s linear 0s infinite;
 }
-
-/*.header__square-pic:hover { 
-  animation: rotation; 
- }
-
- @keyframes animation-name { 
-  from { 
-    transform: rotate(0deg);
-    transition: transform 20s ease-out;
-    animation-iteration-count: infinite; 
-  } 
-  to {
-    transform: rotate(360deg);
-    transition: transform 20s ease-out;
-    animation-iteration-count: infinite;
- }
-}*/
