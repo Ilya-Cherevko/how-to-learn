@@ -1,0 +1,12 @@
+.two-columns__bref {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    width: 175px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.12;
+    font-size: 18px;
+    color: #2f80ed;
+    margin: 0;
+    }
