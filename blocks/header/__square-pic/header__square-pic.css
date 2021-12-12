@@ -6,7 +6,3 @@
   width: 568px;
   background-color: #2f80ed;
 }
-
-.header__square-pic:hover{
-  animation: rotation 20s linear 0s infinite;
-}

@@ -2,3 +2,11 @@
   from {transform:rotate(0deg);}
   to {transform:rotate(360deg);}
 }
+
+.header__square-pic {
+  animation: rotation 20s linear 0s infinite;
+}
+
+.kaufman__triangle {
+  animation: rotation 20s linear 0s infinite;
+}
